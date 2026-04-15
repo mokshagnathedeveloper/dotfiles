@@ -1,0 +1,4 @@
+305CDE for Royal Blue
+00FFFF for Cyan
+FFB7C5 for Sakura Pink
+FF69B4 for HM pink

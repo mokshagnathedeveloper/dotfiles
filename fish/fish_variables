@@ -1,0 +1,5 @@
+# This file contains fish universal variable definitions.
+# VERSION: 3.0
+SETUVAR --export QS_ICON_THEME:Papirus\x2dDark
+SETUVAR __fish_initialized:4300
+SETUVAR fish_user_paths:/home/Mokshagna/\x2elocal/bin

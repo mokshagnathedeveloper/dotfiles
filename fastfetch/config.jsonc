@@ -1,0 +1,35 @@
+{
+    "logo": {
+        "color": {
+            "1": "#B9DAF8",
+            "2": "#B9DAF8"
+        },
+        "padding": {
+            "top": 0,
+            "right": 4
+        }
+    },
+    "display": {
+        "color": "#DBC58F",
+        "separator": " 󰄾 "
+    },
+    "modules": [
+        "title",
+        "separator",
+        "os",
+        "host",
+        "kernel",
+        "uptime",
+        "packages",
+        "shell",
+        "de",
+        "wm",
+        "terminal",
+        "cpu",
+        "gpu",
+        "memory",
+        "disk",
+        "break",
+        "colors"
+    ]
+}

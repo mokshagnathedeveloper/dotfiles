@@ -1,0 +1,58 @@
+/* Global Reset */
+* {
+    font-family: "Quicksand", "Symbols Nerd Font", sans-serif;
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+/* Unified Pill Style */
+#workspace-pill, #window, #pulseaudio, #backlight, #network, #bluetooth,
+#cpu, #memory, #battery, #clock, #custom-power, #tray, 
+#custom-notification, #custom-powerprofile {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #DBC58F;
+    border: 2px solid #284EC3;
+    border-radius: 12px;
+    margin: 0 4px;
+    padding: 0 12px; /* Vertical 0, Horizontal 12 */
+    min-height: 0;
+}
+
+/* Hover Effects */
+#workspace-pill:hover, #window:hover, #pulseaudio:hover, #backlight:hover, 
+#network:hover, #bluetooth:hover, #cpu:hover, #memory:hover, 
+#battery:hover, #clock:hover, #custom-power:hover, #tray:hover, 
+#custom-notification:hover, #custom-powerprofile:hover {
+    border-color: #B9DAF8;
+}
+
+/* Workspaces Specific */
+#workspaces button {
+    color: #DBC58F;
+    padding: 0 5px;
+    min-height: 0;
+}
+
+#workspaces button:hover {
+    border: 2px solid #B9DAF8;
+    border-radius: 8px;
+}
+
+#workspaces button.active {
+    border: 2px solid #DBC58F;
+    border-radius: 8px;
+}
+
+/* Power Profile Colors */
+#custom-powerprofile.performance { color: #ff5555; }
+#custom-powerprofile.power-saver { color: #50fa7b; }
+
+/* Adjustments for specific modules */
+#custom-ws-icon { padding-left: 12px; padding-right: 8px; }
+#tray { margin-left: 10px; }
+#custom-power { margin-right: 10px; }

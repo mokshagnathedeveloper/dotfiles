@@ -1,0 +1,19 @@
+# Wofi Configuration
+mode=drun,run
+show=drun
+always_parse_args=true
+show_icons=true
+term=kitty
+allow_images=true
+hide_scroll=false
+print_command=true
+# Fuzzy matching and sorting
+matching=fuzzy
+# Window Dimensions
+width=600
+height=400
+# Prompt text
+prompt= 󰀻  Apps
+# Disable history as requested
+no_actions=true
+#sort_order=alphabetical

@@ -1,0 +1,31 @@
+# Reversed High-Tech Gradient
+format = """
+[░▒▓](#284EC3)\
+[ $custom ](bg:#284EC3 fg:#DBC58F)\
+[](fg:#284EC3 bg:#7194DD)\
+$directory\
+[](fg:#7194DD bg:#B9DAF8)\
+$git_branch\
+$git_status\
+[](fg:#B9DAF8)\
+$character\
+"""
+
+[custom.arch_logo]
+command = "echo 󰣇 "
+when = "true"
+style = "bg:#284EC3 fg:#DBC58F"
+format = "[$output]($style)"
+
+[directory]
+style = "bg:#7194DD fg:#DBC58F"
+format = "[ $path ]($style)"
+
+[git_branch]
+symbol = ""
+style = "bg:#B9DAF8 fg:#2E3440"
+format = "[[ $symbol $branch ]($style)]($style)"
+
+[character]
+success_symbol = "[ ➜ ](#DBC58F)"
+error_symbol = "[ ➜ ](bold red)"

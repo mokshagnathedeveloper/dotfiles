@@ -1,0 +1,67 @@
+/* CURRENT COLORS */
+@define-color background rgba(0, 0, 0, 0.7);
+@define-color gold #DBC58F;   /* Hardware Gold */
+@define-color blue #284EC3;   /* Waybar Border Blue */
+@define-color cyan #B9DAF8;   /* Aero Cyan (Hover) */
+
+/* KILL THE GRAY SCREEN */
+window, .background {
+    background: transparent;
+}
+
+.notification-row {
+    outline: none;
+    margin: 10px;
+    padding: 0;
+}
+
+.notification {
+    background: @background;
+    border: 2px solid @blue;
+    border-radius: 12px;
+    color: @gold;
+    padding: 12px;
+}
+
+/* Hover effect matching your Waybar pills */
+.notification:hover {
+    border-color: @cyan;
+}
+
+.control-center {
+    background: @background;
+    border: 2px solid @blue;
+    border-radius: 12px;
+    color: @gold;
+    margin: 10px;
+}
+
+.widget-title {
+    color: @cyan;
+    font-size: 25px;
+    margin: 10px;
+}
+
+.widget-dnd {
+    color: @gold;
+    margin: 10px;
+}
+
+/* Match the buttons (Clear All, Power, etc) */
+.control-center-list-contents button {
+    background: rgba(40, 78, 195, 0.2);
+    border: 1px solid @blue;
+    border-radius: 8px;
+    color: @gold;
+}
+
+.control-center-list-contents button:hover {
+    background: rgba(185, 218, 248, 0.2);
+    border-color: @cyan;
+    color: @cyan;
+}
+
+/* Global Font Logic */
+* {
+    font-family: "Quicksand", "Symbols Nerd Font", sans-serif;
+}
