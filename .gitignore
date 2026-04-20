@@ -5,7 +5,7 @@ PlasmaDiscoverUpdates
 QtProject/
 QtProject.conf
 Trolltech.conf
-assets/
+assets
 autostart/
 dconf/
 menus/
@@ -109,7 +109,7 @@ simple-update-notifier/
 spicetify/
 topgrade.toml
 trashrc
-uwsm/
+uwsm
 vesktop/
 vkBasalt/
 vlc/
