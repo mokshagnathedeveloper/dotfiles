@@ -1,119 +1,124 @@
-	.avalonia-build-tasks/
-	GIMP/
-	KDE/
-	PlasmaDiscoverUpdates
-	ProtonPlus/
-	QtProject.conf
-	QtProject/
-	Thunar/
-	Trolltech.conf
-	arkrc
-	assets
-	autostart/
-	baloofileinformationrc
-	baloofilerc
-	bluedevilglobalrc
-	brave-flags.conf
-	cava/
-	conky-manager2.json
-	copyq/
-	dconf/
-	discoverrc
-	dolphinrc
-	drkonqirc
-	easyeffects/
-	emaildefaults
-	filetypesrc
-	fuzzel/
-	galculator/
-	gh/
-	go/
-	goverlay/
-	gtk-3.0/
-	gtk-4.0/
-	gtkrc
-	gtkrc-2.0
-	hardinfo2/
-	heroic/
-	htop/
-	kactivitymanagerd-statsrc
-	kactivitymanagerdrc
-	kate-externaltoolspluginrc
-	kate/
-	katemetainfos
-	katerc
-	katevirc
-	kcmfonts
-	kcminputrc
-	kconf_updaterc
-	kded5rc
-	kded6rc
-	kdedefaults/
-	kdeglobals
-	kfontinstuirc
-	kglobalshortcutsrc
-	kiorc
-	kmenueditrc
-	konsolerc
-	konsolesshconfig
-	kplymouththemeinstallerrc
-	krdpserverrc
-	kscreenlockerrc
-	ksmserverrc
-	ksplashrc
-	ktimezonedrc
-	kwalletrc
-	kwinoutputconfig.json
-	kwinrc
-	kwinrulesrc
-	lapce-nightly/
-	lapce-stable/
-	lazygit/
-	libaccounts-glib/
-	libreoffice/
-	menus/
-	mimeapps.list
-	networkmanager-dmenu/
-	nvtop/
-	nwg-look/
-	obs-studio/
-	pavucontrol.ini
-	plasma-localerc
-	plasma-nm
-	plasma-org.kde.plasma.desktop-appletsrc
-	plasma-welcomerc
-	plasmanotifyrc
-	plasmaparc
-	plasmarc
-	plasmashellrc
-	powerdevilrc
-	powermanagementprofilesrc
-	pulse/
-	pupgui/
-	qBittorrent/
-	qtengine/
-	sddmthemeinstallerrc
-	session/
-	simple-update-notifier/
-	spectaclerc
-	spicetify/
-	systemd/
-	systemmonitorrc
-	topgrade.toml
-	trashrc
-	user-dirs.dirs
-	user-dirs.locale
-	uwsm
-	vesktop/
-	vkBasalt/
-	vlc/
-	waypaper/
-	wekde/
-	wireplumber/
-	xdg-desktop-portal/
-	xfce4/
-	xsettingsd/
-	zen/
-	zoom.conf
-	zoom/
-	zoomus.conf
+# --- System & Desktop Environment Noise ---
+.avalonia-build-tasks/
+KDE/
+PlasmaDiscoverUpdates
+QtProject/
+QtProject.conf
+Trolltech.conf
+assets/
+autostart/
+dconf/
+menus/
+session/
+systemd/
+user-dirs.dirs
+user-dirs.locale
+xdg-desktop-portal/
+
+# --- KDE/Plasma Config Bloat ---
+arkrc
+baloofileinformationrc
+baloofilerc
+bluedevilglobalrc
+discoverrc
+dolphinrc
+drkonqirc
+filetypesrc
+kactivitymanagerd-statsrc
+kactivitymanagerdrc
+kate-externaltoolspluginrc
+kate/
+katemetainfos
+katerc
+katevirc
+kcmfonts
+kcminputrc
+kconf_updaterc
+kded5rc
+kded6rc
+kdedefaults/
+kdeglobals
+kfontinstuirc
+kglobalshortcutsrc
+kiorc
+kmenueditrc
+konsolerc
+konsolesshconfig
+kplymouththemeinstallerrc
+krdpserverrc
+kscreenlockerrc
+ksmserverrc
+ksplashrc
+ktimezonedrc
+kwalletrc
+kwinoutputconfig.json
+kwinrc
+kwinrulesrc
+plasma-localerc
+plasma-nm
+plasma-org.kde.plasma.desktop-appletsrc
+plasma-welcomerc
+plasmanotifyrc
+plasmaparc
+plasmarc
+plasmashellrc
+powerdevilrc
+powermanagementprofilesrc
+sddmthemeinstallerrc
+spectaclerc
+systemmonitorrc
+
+# --- App Specific Bloat ---
+GIMP/
+ProtonPlus/
+Thunar/
+brave-flags.conf
+cava/
+conky-manager2.json
+copyq/
+easyeffects/
+emaildefaults
+fuzzel/
+galculator/
+gh/
+go/
+goverlay/
+gtk-3.0/
+gtk-4.0/
+gtkrc
+gtkrc-2.0
+hardinfo2/
+heroic/
+htop/
+lapce-nightly/
+lapce-stable/
+lazygit/
+libaccounts-glib/
+libreoffice/
+mimeapps.list
+networkmanager-dmenu/
+nvtop/
+nwg-look/
+obs-studio/
+pavucontrol.ini
+pulse/
+pupgui/
+qBittorrent/
+qtengine/
+simple-update-notifier/
+spicetify/
+topgrade.toml
+trashrc
+uwsm/
+vesktop/
+vkBasalt/
+vlc/
+waypaper/
+wekde/
+wireplumber/
+xfce4/
+xsettingsd/
+zen/
+zoom.conf
+zoom/
+zoomus.conf
