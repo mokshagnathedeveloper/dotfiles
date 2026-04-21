@@ -15,8 +15,8 @@ window#waybar {
 #cpu, #memory, #battery, #clock, #custom-power, #tray, 
 #custom-notification, #custom-powerprofile {
     background-color: rgba(0, 0, 0, 0.6);
-    color: #DBC58F;
-    border: 2px solid #284EC3;
+    color: #00FFFF;
+    border: 2px solid #00FFFF;
     border-radius: 12px;
     margin: 0 4px;
     padding: 0 12px; /* Vertical 0, Horizontal 12 */
@@ -33,7 +33,7 @@ window#waybar {
 
 /* Workspaces Specific */
 #workspaces button {
-    color: #DBC58F;
+    color: #00FFFF;
     padding: 0 5px;
     min-height: 0;
 }
@@ -44,7 +44,7 @@ window#waybar {
 }
 
 #workspaces button.active {
-    border: 2px solid #DBC58F;
+    border: 2px solid #00FFFF;
     border-radius: 8px;
 }
 

@@ -93,9 +93,11 @@
     },
 
     "tray": {
-        "icon-size": 18,
-        "spacing": 10
-    },
+    "icon-size": 18,
+    "spacing": 10,
+    "show-passive-items": true,
+    "reverse-direction": false
+},
 
     "custom/notification": {
         "format": "{icon}",

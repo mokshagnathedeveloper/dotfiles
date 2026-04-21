@@ -1,0 +1,63 @@
+[manager]
+show_hidden = true
+show_dotfiles = true
+sort_by = "alphabetical"
+sort_dir_first = true
+
+[opener]
+lapce = [
+    { run = 'lapce "$@"', orphan = true, desc = "Open in Lapce" }
+]
+nano = [
+    { run = 'nano "$@"', block = true, desc = "Edit in Nano" }
+]
+# Image Viewer
+image = [
+    { run = 'imv "$@"', block = false, desc = "Open Image" },
+]
+# Media Player
+video = [
+    { run = 'mpv "$@"', block = false, desc = "Play Media" },
+]
+# Office Suite
+office = [
+    { run = 'libreoffice "$@"', block = false, desc = "LibreOffice" },
+]
+
+[open]
+rules = [
+    # 1. Catch by name (Higher priority)
+    { name = "*.json",  use = [ "lapce", "nano" ] },
+    { name = "*.jsonc", use = [ "lapce", "nano" ] },
+
+    # 2. Add the specific MIME your 'file' command is reporting
+    { mime = "application/json", use = [ "lapce", "nano" ] },
+    { mime = "text/plain", use = [ "lapce", "nano" ] },
+
+    # Ricing & Web (Split for safety)
+    { name = "*.css",   use = [ "lapce", "nano" ] },
+    { name = "*.scss",  use = [ "lapce", "nano" ] },
+    { name = "*.html",  use = [ "lapce", "nano" ] },
+    { name = "*.js",    use = [ "lapce", "nano" ] },
+
+    # System Configs
+    { name = "*.conf",  use = [ "lapce", "nano" ] },
+    { name = "*.toml",  use = [ "lapce", "nano" ] },
+    { name = "*.lua",   use = [ "lapce", "nano" ] },
+    { name = "*.sh",    use = [ "lapce", "nano" ] },
+    { name = "*.fish",  use = [ "lapce", "nano" ] },
+    
+    # MIME Fallbacks
+    { mime = "text/*",  use = [ "lapce", "nano" ] },
+    { mime = "image/*", use = [ "image" ] },
+    { mime = "video/*", use = [ "video" ] },
+    { mime = "audio/*", use = [ "video" ] },
+
+    # Documents
+    { name = "*.doc",   use = [ "office" ] },
+    { name = "*.docx",  use = [ "office" ] },
+    { name = "*.pdf",   use = [ "office" ] },
+
+    # The Final Catch-all
+    { name = "*",       use = [ "nano", "lapce" ] }
+]
