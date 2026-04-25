@@ -1,18 +1,16 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 30, // Reduced to allow CSS to dictate slimness
+    "height": 30, 
     "margin-top": 5,
     "margin-left": 5,
     "margin-right": 5,
     "spacing": 0,
 
-    // --- MODULE LAYOUT ---
     "modules-left": ["custom/power", "network", "bluetooth", "pulseaudio"],
     "modules-center": ["group/workspace-pill", "hyprland/window"],
     "modules-right": ["custom/notification", "tray", "backlight", "battery", "clock"],
 
-    // --- CENTER MODULES ---
     "group/workspace-pill": {
         "orientation": "horizontal",
         "modules": ["custom/ws-icon", "hyprland/workspaces"]
@@ -25,90 +23,97 @@
 
     "hyprland/workspaces": {
         "format": "{name}",
-        "all-outputs": true
+        "all-outputs": true,
+        "on-click": "activate"
     },
 
     "hyprland/window": {
-        "format": "{title}",
+        "format": "󰖲 {title}",
         "max-length": 20,
+        "separate-outputs": true,
         "rewrite": {
-            // App Aliases
-            "^.*Zen Browser.*$": "󰚀 Zen",      // Ying Yang for Zen
+            "^.*Zen Browser.*$": "󰚀 Zen",
             "^.*Firefox.*$": "󰈹 Firefox",
-            "^.*Lapce.*$": "󰘦 Lapce",
             "^.*kitty.*$": "󰄛 Kitty",
-            "^.*Steam.*$": "󰓓 Steam",
-            "^.*Heroic.*$": "󰓥 Heroic",         // Sword/Game icon
-            
-            // General Cleanup
-            "": "󰖲 Desktop",
-            "^.* - (.*)$": "$1"
-        },
-        "on-click": "wofi --show drun"
+            "(.+) - Discord": "󰙯 $1",
+            "^$": "󰖲 Desktop"
+        }
     },
 
-    // --- HARDWARE & SYSTEM ---
-    "network": {
-        "format-wifi": "  {essid}",
-        "format-disconnected": "󰖪  Disconnected",
-        "on-click": "networkmanager_dmenu",
-        "on-click-right": "nmcli radio wifi off", // Simple toggle off
-        "tooltip-format": "{ifname} via {gwaddr} "
-    },
+"network": {
+    "format-wifi": "  {essid}",
+    "format-ethernet": "󰈀 Wired",
+    "format-linked": "󰈀 {ifname} (No IP)",
+    "format-disconnected": "󰖪  Disconnected",
+    "format-alt": "󰖩 {ipaddr}/{cidr}",
+    // This is the key: tell it what to show when the radio is killed
+    "format-disabled": "󰖪  Disabled", 
+    "on-click": "networkmanager_dmenu",
+    "on-click-right": "nmcli radio wifi | grep -q 'enabled' && nmcli radio wifi off || nmcli radio wifi on",
+    "tooltip-format": "{essid}:{signalStrength}% via {gwaddr}"
+},
 
     "pulseaudio": {
-        "format": "{icon}  {volume}%",
+        "format": "{icon} {volume}%",
         "format-muted": "󰝟 Muted",
         "format-icons": { "default": ["", ""] },
         "on-click": "pavucontrol",
-        "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle" // Toggles mute on right click
+        "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "scroll-step": 5
     },
 
     "bluetooth": {
-        "format": " ON",
+        "format": " {status}",
         "format-connected": " {num_connections}",
+        "format-disabled": "󰂲 Off",
         "on-click": "blueman-manager",
-        "on-click-right": "rfkill toggle bluetooth" // Hard toggle for the radio
+        "on-click-right": "rfkill toggle bluetooth"
     },
 
     "battery": {
         "states": { "warning": 30, "critical": 15 },
-        "format": "{icon}  {capacity}%",
-        "format-charging": "󱐋  {capacity}%",
+        "format": "{icon} {capacity}%",
+        "format-charging": "󱐋 {capacity}%",
         "format-icons": ["", "", "", "", ""]
     },
 
     "backlight": {
-        "format": "{icon}  {percent}%",
+        "format": "{icon} {percent}%",
         "format-icons": ["", "", "", "", "", "", "", "", ""],
         "on-scroll-up": "brightnessctl set 5%+",
         "on-scroll-down": "brightnessctl set 5%-"
     },
 
-    // --- UTILITIES ---
     "clock": {
         "format": "  {:%H:%M}",
         "format-alt": "  {:%A, %d %b %Y}",
-        "tooltip-format": "<tt><small>{calendar}</small></tt>"
+        "tooltip-format": "<tt>{calendar}</tt>"
     },
 
     "tray": {
-    "icon-size": 18,
-    "spacing": 10,
-    "show-passive-items": true,
-    "reverse-direction": false
-},
+        "icon-size": 18,
+        "spacing": 10
+    },
 
     "custom/notification": {
+        "tooltip": false,
         "format": "{icon}",
-        "format-icons": { "notification": "<span foreground='red'><sup></sup></span>", "none": "" },
+        "format-icons": {
+            "notification": "<span foreground='red'><sup></sup></span>",
+            "none": "",
+            "dnd-notification": "<span foreground='red'><sup></sup></span>",
+            "dnd-none": ""
+        },
         "return-type": "json",
+        "exec-if": "which swaync-client",
         "exec": "swaync-client -swb",
-        "on-click": "swaync-client -t -sw"
+        "on-click": "swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw",
+        "escape": true
     },
 
     "custom/power": {
-        "format": " 󰣇 ",
+        "format": "󰣇",
         "on-click": "wlogout"
     }
 }
