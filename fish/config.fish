@@ -13,6 +13,7 @@ end
 ### --- Environment Variables --- ###
 # Fish uses fish_add_path for a cleaner $PATH
 fish_add_path $HOME/.local/bin
+set -gx SUDO_EDITOR nvim
 
 ### --- Aliases --- ###
 alias ls='ls --color=auto'
