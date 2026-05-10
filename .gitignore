@@ -1,5 +1,6 @@
 # --- System & Desktop Environment Noise ---
 .avalonia-build-tasks/
+btop/
 KDE/
 PlasmaDiscoverUpdates
 QtProject/
