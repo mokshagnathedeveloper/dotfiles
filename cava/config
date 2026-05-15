@@ -43,7 +43,7 @@ gradient_color_10 = '#DBC58F'
 [smoothing]
 # Noise reduction (0-100) - higher = smoother but less responsive
 # 77 is default, 85 provides good balance for smooth visualization
-noise_reduction = 85
+noise_reduction = 50
 
 # Monstercat smoothing (0 or 1) - adds smoothing between adjacent bars
 monstercat = 1
@@ -53,7 +53,7 @@ waves = 0
 
 # Gravity (0-200) - controls how fast bars fall
 # 100 = normal gravity, 150 = faster fall, 50 = slower fall
-gravity = 120
+gravity = 150
 
 [eq]
 # Equalizer settings for frequency response
