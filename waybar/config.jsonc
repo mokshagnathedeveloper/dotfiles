@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 30, 
+    "height": 40, 
     "margin-top": 5,
     "margin-left": 5,
     "margin-right": 5,
@@ -27,18 +27,21 @@
         "on-click": "activate"
     },
 
-    "hyprland/window": {
-        "format": "󰖲 {title}",
+     "hyprland/window": {
+        "format": "󰖲 {class}",
         "max-length": 20,
         "separate-outputs": true,
         "rewrite": {
-            "^.*Zen Browser.*$": "󰚀 Zen",
-            "^.*Firefox.*$": "󰈹 Firefox",
+            "^.*zen.*$": "󰚀 Zen",
+	    "^.*mpv.*$": "󰕧 MPV",
+            "^.*heroic.*$": "󰓥 Heroic",
+	    "^.*steam.*$": "󰓓 Steam",
             "^.*kitty.*$": "󰄛 Kitty",
-            "(.+) - Discord": "󰙯 $1",
+	    "^.*kitty-btop.*$": "󰓅 btop",
+            "^.*kitty-cava.*$": "󰝚 cava",
             "^$": "󰖲 Desktop"
         }
-    },
+     },
 
 "network": {
     "format-wifi": "  {essid}",
