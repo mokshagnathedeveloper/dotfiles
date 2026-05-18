@@ -1,15 +1,14 @@
 {
-    "logo": {
+	"logo": {
+        "source": "/home/Mokshagna/Rose.txt",
+        "type": "file",                          // Changed from "ansi" to "file"
         "color": {
-            "1": "#B9DAF8",
-            "2": "#B9DAF8"
-        },
-        "padding": {
-            "top": 0,
-            "right": 4
+            "1": "#DBC58F"                              // NOT to override your embedded codes
         }
     },
-    "display": {
+
+
+     "display": {
         "color": "#DBC58F",
         "separator": " 󰄾 "
     },

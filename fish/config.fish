@@ -68,3 +68,10 @@ function wp-show
     end
     disown
 end
+
+alias gamer='powerprofilesctl set performance'
+alias silence='powerprofilesctl set power-saver'
+alias batcheck='upower -i /org/freedesktop/UPower/devices/battery_BAT0'
+alias bgm='mpv --volume=50 --save-position-on-quit --watch-later-options-add=playlist-pos,curtime Music/J-POP+Outliers/ & disown'
+alias clock-lock='sudo cpupower frequency-set -u 2.4GHz'
+alias clock-unlock='sudo cpupower frequency-set -u 4.6GHz'

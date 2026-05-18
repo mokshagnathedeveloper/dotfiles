@@ -52,19 +52,19 @@ disable = ["hyprpm"]
 # tmux_arguments = "-S /var/tmux.sock"
 
 # Do not set the terminal title (default: true)
-# set_title = true
+ set_title = false
 
 # Display the time in step titles (default: true)
-# display_time = true
+ display_time = true
 
 # Don't ask for confirmations (no default value)
-# assume_yes = true
+ assume_yes = true
 
 # Whether to ask what to do after a step fails (default: true)
 # ask_retry = true
 
 # Number of times to automatically retry a step when it fails (default: 0)
-# auto_retry = 0
+ auto_retry = 5
 
 # Same as ask_retry = false (default: false) - legacy
 # no_retry = true
@@ -83,10 +83,10 @@ disable = ["hyprpm"]
 # tmux_session_mode = "attach_if_not_in_session"
 
 # Cleanup temporary or old files (default: false)
-# cleanup = true
+ cleanup = true
 
 # Send a notification for every step (default: false)
-# notify_each_step = false
+ notify_each_step = true
 
 # When to send a notification at the end of a run
 # (default: "always", allowed values: "always", "never", "on_failure")
@@ -116,7 +116,7 @@ disable = ["hyprpm"]
 # Whether to show a distribution-specific summary if applicable, e.g. listing
 # Pacman backup configuration files (*.pacsave and *.pacnew)
 # (default: true)
-# show_distribution_summary = false
+ show_distribution_summary = true
 
 # For NixOS/home-manager, there are multiple ways to switch to newer configurations.
 # When set to autodetect: use nh when available, fall back to vanilla
@@ -267,7 +267,7 @@ disable = ["hyprpm"]
 
 [git]
 # How many repos to pull or fetch at max in parallel
-# max_concurrency = 5
+ max_concurrency = 10
 
 # Additional git repositories to pull or fetch
 # repos = [
