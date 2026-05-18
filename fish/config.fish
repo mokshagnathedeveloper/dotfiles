@@ -19,18 +19,6 @@ set -gx SUDO_EDITOR nvim
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias wp-stop='killall linux-wallpaperengine'
-alias tlauncher='java -jar /usr/bin/tlauncher/starter-core.jar & disown'
-
-# NVIDIA Prime Offload Prefix
-alias p-run='env __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia'
-
-# Maintenance & Storage (Optimized for your 84% SSD usage)
-alias cleanhouse='rm -rf ~/.cache/* ~/.local/share/Trash/*; and sudo paccache -rk1; and sudo journalctl --vacuum-size=100M'
-
-# Fan Control (G15 Optimized)
-alias fan-fast='sudo dell-bios-fan-control 0; and sudo i8kctl fan 2 2; and echo "Fans set to MAX"'
-alias fan-auto='sudo dell-bios-fan-control 1; and echo "Fans set to AUTO"'
-
 ### --- Functions --- ###
 
 # Wallpaper Engine Function (wp-show)
