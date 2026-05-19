@@ -3,7 +3,7 @@
 # Configuration
 MONITOR="eDP-1"
 WP_ROOT="/home/Mokshagna/.local/share/Steam/steamapps/workshop/content/431960"
-ID="3556568863" # Iuno -5- Wallpaper
+ID="3571476687" # Iuno -5- Wallpaper
 
 # Check if linux-wallpaperengine is already running
 if pgrep -f "linux-wallpaperengine" > /dev/null

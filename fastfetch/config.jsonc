@@ -1,14 +1,16 @@
 {
-	"logo": {
-        "source": "~/.config/fastfetch/Rose.txt",
-        "type": "file",                          // Changed from "ansi" to "file"
+    "logo": {
+        "source": "~/.config/fastfetch/Moon.txt",
+        "type": "file",
+        "position": "top",
+	"padding": {
+	"left": 15
+	},
         "color": {
-            "1": "#DBC58F"                              // NOT to override your embedded codes
+            "1": "#DBC58F"
         }
     },
-
-
-     "display": {
+    "display": {
         "color": "#DBC58F",
         "separator": " 󰄾 "
     },
@@ -27,8 +29,6 @@
         "cpu",
         "gpu",
         "memory",
-        "disk",
-        "break",
-        "colors"
+        "disk"
     ]
 }

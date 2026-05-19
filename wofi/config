@@ -12,4 +12,4 @@ width=600
 height=400
 prompt= 󰀻  Apps
 no_actions=true
-sort_order=alphabetical
+#sort_order=alphabetical

@@ -1,7 +1,8 @@
 #!/bin/bash
 
 PROC="linux-wallpaperengine"
-WP_CMD="SDL_AUDIODRIVER=dummy prime-run linux-wallpaperengine /home/Mokshagna/.local/share/Steam/steamapps/workshop/content/431960/3556568863 --silent --fps 30 --screen-root eDP-1 --volume 0 --disable-mouse --disable-parallax --scaling fill --max-memory-usage 1024 --no-audio-processing --no-sync --geometry 1920x1080 --disable-audio"
+WP_CMD="SDL_AUDIODRIVER=dummy __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia VK_DRIVER_FILES=/usr/share/vulkan/icd.d/nvidia_icd.json DXVK_FILTER_DEVICE_NAME="RTX 3050" __GL_THREADED_OPTIMIZATIONS=1 linux-wallpaperengine /home/Mokshagna/.local/share/Steam/steamapps/workshop/content/431960/3571476687 --silent --fps 30 --screen-root eDP-1 --volume 0 --disable-mouse --disable-parallax --scaling fill --max-memory-usage 1024 --no-audio-processing --no-sync --geometry 1920x1080 --disable-audio"
+
 
 handle() {
   case $1 in
