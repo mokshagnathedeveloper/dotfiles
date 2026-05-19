@@ -4,7 +4,7 @@
 TEMP=$(curl -s "wttr.in/Hyderabad?format=%t" | tr -d '+')
 
 if [[ -z "$TEMP" || "$TEMP" == *"Unknown"* || "$TEMP" == *"Error"* ]]; then
-    echo "Cloudy"
+    echo "69°C"
 else
     echo "$TEMP"
 fi
