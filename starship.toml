@@ -29,3 +29,4 @@ format = "[[ $symbol $branch ]($style)]($style)"
 [character]
 success_symbol = "[ ➜ ](#DBC58F)"
 error_symbol = "[ ➜ ](bold red)"
+
