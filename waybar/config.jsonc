@@ -51,7 +51,7 @@
     "format-alt": "󰖩 {ipaddr}/{cidr}",
     // This is the key: tell it what to show when the radio is killed
     "format-disabled": "󰖪  Disabled", 
-    "on-click": "networkmanager_dmenu",
+    "on-click": "kitty --class floating_wifi -e nmtui",
     "on-click-right": "nmcli radio wifi | grep -q 'enabled' && nmcli radio wifi off || nmcli radio wifi on",
     "tooltip-format": "{essid}:{signalStrength}% via {gwaddr}"
 },
@@ -61,7 +61,7 @@
         "format-muted": "󰝟 Muted",
         "format-icons": { "default": ["", ""] },
         "on-click": "pavucontrol",
-        "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
         "scroll-step": 5
     },
 
@@ -117,6 +117,6 @@
 
     "custom/power": {
         "format": "󰣇",
-        "on-click": "wlogout"
+        "on-click": "hyprshutdown"
     }
 }
