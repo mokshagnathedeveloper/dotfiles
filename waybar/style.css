@@ -1,7 +1,7 @@
 /* Global Reset */
 * {
-    font-family: "Quicksand", "Symbols Nerd Font", sans-serif;
-    font-size: 25px;
+    font-family: "JetBrainsMono NF", "Symbols Nerd Font", sans-serif;
+    font-size: 20px;
     padding: 0;
     margin: 0;
 }
@@ -12,7 +12,7 @@ window#waybar {
 
 /* Unified Pill Style */
 #workspace-pill, #window, #pulseaudio, #backlight, #network, #bluetooth,
-#cpu, #memory, #battery, #clock, #custom-power, #tray, 
+#cpu, #memory, #battery, #clock, #tray, 
 #custom-notification, #custom-powerprofile, #custom-mpv-music, #cpu, #memory {
     background-color: rgba(0, 0, 0, 0.6);
     color: #DBC58F;
@@ -26,7 +26,7 @@ window#waybar {
 /* Hover Effects */
 #workspace-pill:hover, #window:hover, #pulseaudio:hover, #backlight:hover, 
 #network:hover, #bluetooth:hover, #cpu:hover, #memory:hover, 
-#battery:hover, #clock:hover, #custom-power:hover, #tray:hover, 
+#battery:hover, #clock:hover, #tray:hover, 
 #custom-notification:hover, #custom-powerprofile:hover {
     border-color: #B9DAF8;
 }
@@ -34,7 +34,7 @@ window#waybar {
 /* Workspaces Specific */
 #workspaces button {
     color: #DBC58F;
-    padding: 0 5px;
+    padding: 0 2px;
     min-height: 0;
 }
 

@@ -1,13 +1,13 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 40, 
+    "height": 30, 
     "margin-top": 5,
     "margin-left": 5,
     "margin-right": 5,
     "spacing": 0,
 
-    "modules-left": ["custom/power", "network", "bluetooth", "pulseaudio", "custom/mpv-music"],
+    "modules-left": ["network", "bluetooth", "pulseaudio", "custom/mpv-music"],
     "modules-center": ["group/workspace-pill", "hyprland/window"],
     "modules-right": ["cpu", "memory", "custom/notification", "tray", "backlight", "battery", "clock"],
 
@@ -69,7 +69,7 @@
 },
 
     "pulseaudio": {
-        "format": "{icon} {volume}%",
+        "format": "{icon}  {volume}%",
         "format-muted": "󰝟 Muted",
         "format-icons": { "default": ["", ""] },
         "on-click": "pavucontrol",
@@ -78,7 +78,8 @@
     },
 
     "bluetooth": {
-        "format-enabled": " On",
+	    "format": " {status}",
+	    "format-enabled": " On",
         "format-connected": " {num_connections}",
         "format-disabled": "󰂲 Off",
         "on-click": "blueman-manager",
@@ -110,23 +111,6 @@
         "spacing": 10
     },
 
-    "custom/notification": {
-        "tooltip": false,
-        "format": "{icon}",
-        "format-icons": {
-            "notification": "<span foreground='red'><sup></sup></span>",
-            "none": "",
-            "dnd-notification": "<span foreground='red'><sup></sup></span>",
-            "dnd-none": ""
-        },
-        "return-type": "json",
-        "exec-if": "which swaync-client",
-        "exec": "swaync-client -swb",
-        "on-click": "swaync-client -t -sw",
-        "on-click-right": "swaync-client -d -sw",
-        "escape": true
-    },
-
 "custom/mpv-music": {
         "format": "{icon} {text}",
         "return-type": "json",
@@ -141,10 +125,5 @@
         "on-click-right": "playerctl --player=mpv next",
         "on-scroll-up": "playerctl --player=mpv volume 0.05+",
         "on-scroll-down": "playerctl --player=mpv volume 0.05-"
-    },
-
-    "custom/power": {
-        "format": "󰣇",
-        "on-click": "hyprshutdown"
     }
 }

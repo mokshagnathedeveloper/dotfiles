@@ -36,8 +36,8 @@ window, .background {
 
 .widget-title {
     color: @cyan;
-    font-size: 25px;
-    margin: 10px;
+    font-size: 25px; /* Increased from 25px */
+    margin: 15px 10px;
 }
 
 .widget-dnd {
