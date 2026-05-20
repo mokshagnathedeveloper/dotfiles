@@ -13,7 +13,7 @@ window#waybar {
 /* Unified Pill Style */
 #workspace-pill, #window, #pulseaudio, #backlight, #network, #bluetooth,
 #cpu, #memory, #battery, #clock, #custom-power, #tray, 
-#custom-notification, #custom-powerprofile {
+#custom-notification, #custom-powerprofile, #custom-mpv-music, #cpu, #memory {
     background-color: rgba(0, 0, 0, 0.6);
     color: #DBC58F;
     border: 2px solid #284EC3;
