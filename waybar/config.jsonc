@@ -7,19 +7,9 @@
     "margin-right": 5,
     "spacing": 0,
 
-    "modules-left": ["network", "bluetooth", "pulseaudio", "custom/mpv-music"],
-    "modules-center": ["group/workspace-pill", "hyprland/window"],
+    "modules-left": ["hyprland/workspaces", "network", "bluetooth", "pulseaudio", "custom/mpv-music"],
+    "modules-center": [ "hyprland/window"],
     "modules-right": ["cpu", "memory", "custom/notification", "tray", "backlight", "battery", "clock"],
-
-    "group/workspace-pill": {
-        "orientation": "horizontal",
-        "modules": ["custom/ws-icon", "hyprland/workspaces"]
-    },
-
-    "custom/ws-icon": {
-        "format": "",
-        "on-click": "hyprctl dispatch togglespecialworkspace"
-    },
 
     "hyprland/workspaces": {
         "format": "{name}",

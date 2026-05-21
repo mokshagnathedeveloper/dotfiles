@@ -11,7 +11,7 @@ window#waybar {
 }
 
 /* Unified Pill Style */
-#workspace-pill, #window, #pulseaudio, #backlight, #network, #bluetooth,
+#window, #pulseaudio, #backlight, #network, #bluetooth,
 #cpu, #memory, #battery, #clock, #tray, 
 #custom-notification, #custom-powerprofile, #custom-mpv-music, #cpu, #memory {
     background-color: rgba(0, 0, 0, 0.6);
@@ -24,7 +24,7 @@ window#waybar {
 }
 
 /* Hover Effects */
-#workspace-pill:hover, #window:hover, #pulseaudio:hover, #backlight:hover, 
+#window:hover, #pulseaudio:hover, #backlight:hover, 
 #network:hover, #bluetooth:hover, #cpu:hover, #memory:hover, 
 #battery:hover, #clock:hover, #tray:hover, 
 #custom-notification:hover, #custom-powerprofile:hover {
@@ -32,6 +32,17 @@ window#waybar {
 }
 
 /* Workspaces Specific */
+
+#workspaces {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #DBC58F;
+    border: 2px solid #284EC3;
+    border-radius: 12px;
+    margin: 0 4px;
+    padding: 0 2px; /* Vertical 0, Horizontal 12 */
+    min-height: 0;
+
+}
 #workspaces button {
     color: #DBC58F;
     padding: 0 2px;

@@ -24,7 +24,7 @@ alias wp-stop='killall linux-wallpaperengine'
 # Wallpaper Engine Function (wp-show)
 function wp-show
     set -l WP_ROOT "/home/Mokshagna/.local/share/Steam/steamapps/workshop/content/431960"
-    set -l ID "3556568863"
+    set -l ID "3571476687"
 
     # Use the first argument if provided, otherwise use the default ID
     if count $argv > /dev/null
@@ -38,7 +38,7 @@ function wp-show
     # Using 'nohup' and '&' for backgrounding in Fish
     begin
         set -x __NV_PRIME_RENDER_OFFLOAD 1
-        set -x __GLX_VENDOR_LIBRARY_NAME nvidia
+	set -x __GLX_VENDOR_LIBRARY_NAME nvidia
         set -x SteamAppId 0
         set -x SteamGameId 0
         set -x SDL_AUDIODRIVER dummy
@@ -60,7 +60,7 @@ end
 alias gamer='powerprofilesctl set performance'
 alias silence='powerprofilesctl set power-saver'
 alias batcheck='upower -i /org/freedesktop/UPower/devices/battery_BAT0'
-alias bgm='mpv --volume=50 --save-position-on-quit --watch-later-options-add=playlist-pos,curtime Music/J-POP+Outliers/ & disown'
+alias bgm='mpv --no-video --volume=50 --shuffle --save-position-on-quit --watch-later-options-add=playlist-pos,curtime Music/J-POP+Outliers/'
 alias clock-lock='sudo cpupower frequency-set -u 2.4GHz'
 alias clock-unlock='sudo cpupower frequency-set -u 4.6GHz'
 

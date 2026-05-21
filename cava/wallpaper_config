@@ -1,0 +1,42 @@
+[general]
+bars = 28
+framerate = 120
+
+[input]
+method = pulse
+source = auto
+
+[output]
+# Changed to noncurses for cleaner canvas scaling in a background layer
+method = noncurses
+style = stereo
+
+[color]
+# Forces the terminal wrapper to render a completely see-through background
+background = default
+
+gradient = 1
+gradient_count = 10
+gradient_color_1 = '#284EC3'
+gradient_color_2 = '#3D5CCF'
+gradient_color_3 = '#536BDB'
+gradient_color_4 = '#6979E7'
+gradient_color_5 = '#7E88F3'
+gradient_color_6 = '#9396FF'
+gradient_color_7 = '#A9A5FF'
+gradient_color_8 = '#B9DAF8'
+gradient_color_9 = '#D2D0C3'
+gradient_color_10 = '#DBC58F'
+
+[smoothing]
+noise_reduction = 20
+monstercat = 1
+waves = 0
+gravity = 200
+
+[eq]
+1 = 0.8
+2 = 0.9
+3 = 1.0
+4 = 1.1
+5 = 1.2

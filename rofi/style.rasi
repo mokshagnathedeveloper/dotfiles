@@ -1,0 +1,54 @@
+window {
+    width: 600px;
+    height: 400px;
+    border: 2px;
+    border-color: #284EC3;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.60);
+}
+
+inputbar {
+    margin: 10px;
+    padding: 8px;
+    children: [ prompt, entry ];
+    background-color: transparent;
+}
+
+prompt {
+    text-color: #DBC58F;
+    margin-right: 10px;
+    background-color: transparent;
+}
+
+entry {
+    text-color: #B9DAF8;
+    background-color: transparent;
+}
+
+listview {
+    margin: 5px 10px 10px 10px;
+    lines: 8;
+    background-color: transparent;
+}
+
+element {
+    padding: 8px;
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+element selected {
+    background-color: transparent;
+    border: 2px;
+    border-color: #DBC58F;
+}
+
+element-text {
+    text-color: #B9DAF8;
+    background-color: transparent;
+}
+
+element-text selected {
+    text-color: #DBC58F;
+    background-color: transparent;
+}

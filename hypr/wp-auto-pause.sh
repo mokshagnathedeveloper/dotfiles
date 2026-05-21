@@ -21,7 +21,7 @@ handle() {
           
           # Re-check: Did you open a window during those 5 seconds?
           if [ "$(hyprctl activeworkspace -j | jq '.windows')" -eq 0 ]; then
-             eval "$WP_CMD > /dev/null 2>&1 < /dev/null &"
+             eval "$WP_CMD&"
           fi
         fi
       fi

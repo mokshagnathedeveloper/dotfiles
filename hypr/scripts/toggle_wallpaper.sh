@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 
 # Configuration
 MONITOR="eDP-1"
@@ -13,9 +13,9 @@ then
 else
     # If it is NOT running, launch with NVIDIA offload and your optimization flags
     # Using 'env' to pass the prime render and glx vendor variables
-    nohup env __NV_PRIME_RENDER_OFFLOAD=1 \
-        __GLX_VENDOR_LIBRARY_NAME=nvidia \
-        SDL_AUDIODRIVER=dummy \
+    nohup env __NV_PRIME_RENDER_OFFLOAD=1
+    __GLX_VENDOR_LIBRARY_NAME=nvidia
+    SDL_AUDIODRIVER=dummy \
         linux-wallpaperengine "$WP_ROOT/$ID" \
         --wayland \
         --silent \
