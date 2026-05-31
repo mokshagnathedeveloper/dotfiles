@@ -63,6 +63,8 @@ alias batcheck='upower -i /org/freedesktop/UPower/devices/battery_BAT0'
 alias bgm='mpv --no-video --volume=50 --shuffle --save-position-on-quit --watch-later-options-add=playlist-pos,curtime Music/J-POP+Outliers/'
 alias clock-lock='sudo cpupower frequency-set -u 2.4GHz'
 alias clock-unlock='sudo cpupower frequency-set -u 4.6GHz'
+alias nv-lock='sudo nvidia-smi -lgc 210,800'
+alias nv-unlock='sudo nvidia-smi -rgc'
 
 
 function wl-copy-file
