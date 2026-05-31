@@ -1,4 +1,5 @@
 # --- System & Desktop Environment Noise ---
+fontconfig/
 .avalonia-build-tasks/
 btop/
 KDE/
