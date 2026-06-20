@@ -1,14 +1,10 @@
 {
     "logo": {
-        "source": "~/.config/fastfetch/Moon.txt",
+        "source": "~/.config/fastfetch/Rose.txt",
         "type": "file",
-        "position": "top",
-	"padding": {
-	"left": 15
-	},
         "color": {
             "1": "#DBC58F"
-        }
+        },
     },
     "display": {
         "color": "#DBC58F",
