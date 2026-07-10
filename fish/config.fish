@@ -60,25 +60,33 @@ end
 alias gamer='powerprofilesctl set performance'
 alias silence='powerprofilesctl set power-saver'
 alias batcheck='upower -i /org/freedesktop/UPower/devices/battery_BAT0'
-alias bgm='mpv --no-video --volume=50 --shuffle --save-position-on-quit --watch-later-options-add=playlist-pos,curtime Music/J-POP+Outliers/'
-alias clock-lock='sudo cpupower frequency-set -u 2.4GHz'
+alias bgm='mpv --volume=50 --shuffle --save-position-on-quit --watch-later-options-add=playlist-pos,curtime Music/J-POP+Outliers/ & disown'
+alias clock-lock='sudo cpupower frequency-set -u 2.6GHz'
 alias clock-unlock='sudo cpupower frequency-set -u 4.6GHz'
-alias nv-lock='sudo nvidia-smi -lgc 210,1005'
+alias nv-lock='sudo nvidia-smi -lgc 210,1200'
 alias nv-unlock='sudo nvidia-smi -rgc'
 
 
 function wl-copy-file
     if test -f $argv[1]
-        # Get the correct mime type of the file (e.g., image/png, application/pdf)
-        set mime (file --mime-type -b $argv[1])
-        # Force it into the Wayland clipboard as a proper file stream
-        wl-copy --type $mime < $argv[1]
-        echo "Copied $argv[1] to clipboard as $mime"
+        set -l absolute_path (realpath $argv[1])
+        set -l mime (file --mime-type -b $absolute_path)
+
+        # Check if it's an image (png, jpeg, webp, etc.)
+        if string match -q "image/*" $mime
+            # Convert and copy it as a raw image stream
+            # We use 'convert' from ImageMagick to handle webp/jpeg to png conversion on the fly
+            magick $absolute_path png:- | wl-copy --type image/png
+            echo "Copied actual image data to clipboard!"
+        else
+            # For PDFs and other files, use the standard target URI list
+            echo -n "file://$absolute_path" | wl-copy --type text/uri-list
+            echo "Copied file stream reference ($mime)"
+        end
     else
         echo "File not found!"
     end
 end
-
 
 function ex
     if test -f $argv[1]
