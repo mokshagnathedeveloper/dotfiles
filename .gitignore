@@ -123,3 +123,5 @@ zen/
 zoom.conf
 zoom/
 zoomus.conf
+/kdeconnect
+/nvim/lazy-lock.json

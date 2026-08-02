@@ -12,8 +12,7 @@ window#waybar {
 
 /* Unified Pill Style */
 #window, #pulseaudio, #backlight, #network, #bluetooth,
-#cpu, #memory, #battery, #clock, #tray, 
-#custom-notification, #custom-powerprofile, #custom-mpv-music, #cpu, #memory {
+#cpu, #memory, #battery, #clock, #tray, #custom-powerprofile, #custom-mpv-music{
     background-color: rgba(0, 0, 0, 0.6);
     color: #DBC58F;
     border: 2px solid #284EC3;
@@ -27,7 +26,7 @@ window#waybar {
 #window:hover, #pulseaudio:hover, #backlight:hover, 
 #network:hover, #bluetooth:hover, #cpu:hover, #memory:hover, 
 #battery:hover, #clock:hover, #tray:hover, 
-#custom-notification:hover, #custom-powerprofile:hover {
+#custom-notification:hover {
     border-color: #B9DAF8;
 }
 
@@ -58,11 +57,5 @@ window#waybar {
     color: #DBC58F;
 }
 
-/* Power Profile Colors */
-#custom-powerprofile.performance { color: #ff5555; }
-#custom-powerprofile.power-saver { color: #50fa7b; }
-
-/* Adjustments for specific modules */
-#custom-ws-icon { padding-left: 0px; padding-right: 8px; }
 #tray { margin-left: 10px; }
-#custom-power { margin-right: 10px; }
+
