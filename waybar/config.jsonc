@@ -8,8 +8,8 @@
     "spacing": 0,
 
     "modules-left": ["hyprland/workspaces", "network", "bluetooth", "pulseaudio", "custom/mpv-music"],
-    "modules-center": [ "hyprland/window"],
-    "modules-right": ["cpu", "memory", "custom/notification", "tray", "backlight", "battery", "clock"],
+    "modules-center": ["hyprland/window"],
+    "modules-right": ["tray", "cpu", "memory", "backlight", "battery", "clock"],
 
     "hyprland/workspaces": {
         "format": "{name}",
@@ -59,7 +59,7 @@
 },
 
     "pulseaudio": {
-        "format": "{icon}  {volume}%",
+        "format": "{icon} {volume}%",
         "format-muted": "󰝟 Muted",
         "format-icons": { "default": ["", ""] },
         "on-click": "pavucontrol",
@@ -108,7 +108,7 @@
         "exec": "playerctl --player=mpv metadata --format '{\"text\": \"{{title}} - {{artist}}\", \"alt\": \"{{status}}\", \"tooltip\": \"{{title}} by {{artist}}\"}' 2>/dev/null",              "exec-if": "pgrep mpv",
         "interval": 2,
         "format-icons": {
-            "Playing": "<span foreground='#DBC58F'>󰎆</span>",
+            "Playing": "<span foreground='#00FFFF'>󰎆</span>",
             "Paused": "󱋤"
         },
         "on-click": "playerctl --player=mpv play-pause",

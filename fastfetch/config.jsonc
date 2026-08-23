@@ -4,7 +4,7 @@
         "source": "~/.config/fastfetch/Rose.txt",
         "type": "file",
         "color": {
-            "1": "#DBC58F"
+            "1": "#FFB7C5"
         },
         "padding": {
             "top": 1,
@@ -12,7 +12,7 @@
         }
     },
     "display": {
-        "color": "#DBC58F",
+        "color": "#00FFFF",
         "separator": " 󰄾 "
     },
     "modules": [
@@ -29,11 +29,11 @@
         "terminal",
         {
             "type": "cpu",
-            "format": "{1}"
+	    "format": "{1}"
         },
         {
             "type": "gpu",
-            "format": "{2}"
+	    "format": "{2}"
         },
         "memory",
         "disk"

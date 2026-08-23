@@ -2,3 +2,6 @@
 00FFFF for Cyan
 FFB7C5 for Sakura Pink
 FF69B4 for HM pink
+DBC58F for Hardware Gold
+B9DAF8 for Aero Blue
+284EC3 for Darker(?) Blue

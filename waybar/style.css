@@ -14,8 +14,8 @@ window#waybar {
 #window, #pulseaudio, #backlight, #network, #bluetooth,
 #cpu, #memory, #battery, #clock, #tray, #custom-powerprofile, #custom-mpv-music{
     background-color: rgba(0, 0, 0, 0.6);
-    color: #DBC58F;
-    border: 2px solid #284EC3;
+    color: #00FFFF;
+    border: 2px solid #FFB7C5;
     border-radius: 12px;
     margin: 0 4px;
     padding: 0 12px; /* Vertical 0, Horizontal 12 */
@@ -27,34 +27,31 @@ window#waybar {
 #network:hover, #bluetooth:hover, #cpu:hover, #memory:hover, 
 #battery:hover, #clock:hover, #tray:hover, 
 #custom-notification:hover {
-    border-color: #B9DAF8;
+    border-color: #00FFFF;
+    color: #FFB7C5;
 }
 
 /* Workspaces Specific */
 
 #workspaces {
     background-color: rgba(0, 0, 0, 0.6);
-    color: #DBC58F;
-    border: 2px solid #284EC3;
+    color: #00FFFF;
+    border: 2px solid #FFB7C5;
     border-radius: 12px;
     margin: 0 4px;
     padding: 0 2px; /* Vertical 0, Horizontal 12 */
     min-height: 0; 
 
 }
+
 #workspaces button {
-    color: #B9DAF8;
-    padding: 0 2px;
+    color: #FFB7C5;
+    padding: 0 0px;
     min-height: 0;
 }
 
-#workspaces button:hover {
-    border: 2px solid #B9DAF8;
-    border-radius: 8px;
-}
-
 #workspaces button.active {
-    color: #DBC58F;
+    color: #00FFFF;
 }
 
 #tray { margin-left: 10px; }

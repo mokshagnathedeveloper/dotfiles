@@ -19,7 +19,7 @@ window {
     width: 600px;
     height: 400px;
     border: 2px;
-    border-color: #284EC3;
+    border-color: #FFB7C5;
     border-radius: 12px;
     background-color: rgba(0, 0, 0, 0.60);
 }
@@ -38,7 +38,7 @@ inputbar {
 
 prompt {
     background-color: transparent;
-    text-color: #DBC58F;
+    text-color: #00FFFF;
     padding: 0px 10px 0px 0px;
 }
 
@@ -48,7 +48,7 @@ textbox-prompt-colon {
 
 entry {
     background-color: transparent;
-    text-color: #B9DAF8;
+    text-color: #FFB7C5;
 }
 
 listview {
@@ -72,7 +72,7 @@ element alternate.urgent,
 element normal.active,
 element alternate.active {
     background-color: transparent;
-    text-color: #B9DAF8;
+    text-color: #FFB7C5;
 }
 
 element selected.normal,
@@ -80,8 +80,8 @@ element selected.urgent,
 element selected.active {
     background-color: transparent;
     border: 2px;
-    border-color: #DBC58F;
-    text-color: #DBC58F;
+    border-color: #00FFFF;
+    text-color: #00FFFF;
 }
 
 element-text {

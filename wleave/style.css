@@ -9,8 +9,8 @@ window {
 }
 
 button {
-    color: rgba(219, 197, 143, 1);                  /* B9DAF8 applied to default text/icons */
-    background-color: rgba(185, 218, 248, 0.15);      /* 284EC3 with opacity dropped for a clean tint */
+    color: rgba(255, 183, 197, 1);                  /* B9DAF8 applied to default text/icons */
+    background-color: rgba(255, 183, 197, 0.15);      /* 284EC3 with opacity dropped for a clean tint */
     border: none;  /* Keeps the grid spacing even without showing a line yet */
     padding: 10px;                  /* Give the contents some nice breathing room */
 }
@@ -31,11 +31,11 @@ button:hover label.keybind, button:focus label.keybind {
 
 button:focus,
 button:hover {
-    color: rgba(219, 197, 143, 1);                   /* DBC58F text hover highlight */
-    background-color: rgba(40, 78, 195, 0.5);     /* DBC58F subtle container glow on hover */
+    color: rgba(0, 255, 255, 1);                   /* DBC58F text hover highlight */
+    background-color: rgba(255, 183, 197, 0.5);     /* DBC58F subtle container glow on hover */
 }
 
 button:active {
-    color: rgba(185, 218, 248, 1);                   /* B9DAF8 active text press */
-    background-color: rgba(40, 78, 195, 0.4);        /* 284EC3 deep press tint */
+    color: rgba(0, 255, 255, 1);                   /* B9DAF8 active text press */
+    background-color: rgba(255, 183, 197, 0.4);        /* 284EC3 deep press tint */
 }

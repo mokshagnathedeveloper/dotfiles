@@ -68,8 +68,8 @@ hl.config({
         border_size = 2,
 
         col = {
-            active_border   = { colors = { "rgba(284ec3ff)", "rgba(b9daf8ff)" }, angle = 90 },
-            inactive_border = "rgba(595959aa)",
+            active_border   = { colors = { "rgba(FFB7C5ff)", "rgba(FF69B4ff)" }, angle = 90 },
+            inactive_border = { colors = {"rgba(00FFFFff)", "rgba(B9DAF8ff)"}, angle = 90 },
         },
 
         layout = "dwindle",
@@ -103,7 +103,8 @@ hl.config({
             enabled      = true,
             range        = 18,
             render_power = 3,
-            color        = { colors = { "rgba(284ec3ff)", "rgba(b9daf8ff)" }, angle = 45 },
+            color        = { colors = { "rgba(FFB7C5ff)", "rgba(FF69B4ff)" }, angle = 90 },
+	    color_inactive = {colors = { "rgba(00FFFFff)", "rgba(B9DAF8ff)" }, angle = 90 },
         },
     },
 

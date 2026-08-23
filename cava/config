@@ -24,21 +24,16 @@ style = stereo
 gradient = 1
 gradient_count = 10
 
-# Primary Deep Blue at the base (Highest Stability)
-gradient_color_1 = '#284EC3'
-gradient_color_2 = '#3D5CCF'
-gradient_color_3 = '#536BDB'
-gradient_color_4 = '#6979E7'
-
-# Transitioning to Secondary Sky Blue (The "Glacio" Zone)
-gradient_color_5 = '#7E88F3'
-gradient_color_6 = '#9396FF'
-gradient_color_7 = '#A9A5FF'
-gradient_color_8 = '#B9DAF8'
-
-# Accent Gold for the peak "Impact" (The Crit DMG Spark)
-gradient_color_9 = '#D2D0C3'
-gradient_color_10 = '#DBC58F'
+gradient_color_1 = '#FF69B4'
+gradient_color_2 = '#FF71B6'
+gradient_color_3 = '#FF79B8'
+gradient_color_4 = '#FF82BB'
+gradient_color_5 = '#FF8ABD'
+gradient_color_6 = '#FF92BF'
+gradient_color_7 = '#FF9AC1'
+gradient_color_8 = '#FFA3C3'
+gradient_color_9 = '#FFABC5'
+gradient_color_10 = '#FFB7C5'
 
 [smoothing]
 # Noise reduction (0-100) - higher = smoother but less responsive

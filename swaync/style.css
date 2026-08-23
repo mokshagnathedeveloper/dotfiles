@@ -1,8 +1,8 @@
 /* CURRENT COLORS */
 @define-color background rgba(0, 0, 0, 0.7);
-@define-color gold #DBC58F;   
-@define-color blue #284EC3;  
-@define-color cyan #B9DAF8; 
+@define-color cyan #00FFFF;   
+@define-color pink #FF69B4;  
+@define-color aero #B9DAF8; 
 
 window, .background {
     background: transparent;
@@ -16,46 +16,46 @@ window, .background {
 
 .notification {
     background: @background;
-    border: 2px solid @blue;
+    border: 2px solid @pink;
     border-radius: 12px;
-    color: @gold;
+    color: @cyan;
     padding: 12px;
 }
 
 .notification:hover {
-    border-color: @cyan;
+    border-color: @aero;
 }
 
 .control-center {
     background: @background;
-    border: 2px solid @blue;
+    border: 2px solid @pink;
     border-radius: 12px;
-    color: @gold;
+    color: @cyan;
     margin: 10px;
 }
 
 .widget-title {
-    color: @cyan;
+    color: @aero;
     font-size: 25px; /* Increased from 25px */
     margin: 15px 10px;
 }
 
 .widget-dnd {
-    color: @gold;
+    color: @cyan;
     margin: 10px;
 }
 
 .control-center-list-contents button {
     background: rgba(40, 78, 195, 0.2);
-    border: 1px solid @blue;
+    border: 1px solid @pink;
     border-radius: 8px;
-    color: @gold;
+    color: @cyan;
 }
 
 .control-center-list-contents button:hover {
     background: rgba(185, 218, 248, 0.2);
-    border-color: @cyan;
-    color: @cyan;
+    border-color: @aero;
+    color: @aero;
 }
 
  {
