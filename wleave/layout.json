@@ -22,7 +22,7 @@
             "label": "logout",
             "action": [
                 {
-                     "executable": "hyprlock"
+                     "executable": "hyprshutdown"
                 }
             ],
             "text": "Logout",

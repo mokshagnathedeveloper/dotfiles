@@ -12,7 +12,7 @@ window#waybar {
 
 /* Unified Pill Style */
 #window, #pulseaudio, #backlight, #network, #bluetooth,
-#cpu, #memory, #battery, #clock, #tray, #custom-powerprofile, #custom-mpv-music{
+#cpu, #memory, #battery, #clock, #tray, #custom-powerprofile, #mpris{
     background-color: rgba(0, 0, 0, 0.6);
     color: #00FFFF;
     border: 2px solid #FFB7C5;

@@ -1,8 +1,3 @@
--- #######################################################################################
--- HYPRLAND CONFIG - NATIVE LUA
--- Official Reference: https://wiki.hypr.land/Configuring/Start/
--- #######################################################################################
-
 ---------------------
 ---- MY PROGRAMS ----
 ---------------------
@@ -39,11 +34,7 @@ hl.on("hyprland.start", function()
 
     -- Logic & Audio
     hl.exec_cmd("pw-play --volume=0.5 /home/Mokshagna/Downloads/kuru-kuru-herta-made-with-Voicemod.mp3")
-
-    -- Shaders
-    -- Replace hyprctl keyword with hyprctl eval
- hl.exec_cmd("hyprctl eval 'decoration:screen_shader = /home/Mokshagna/.config/hypr/shaders/ICC.frag" )
- end)
+end)
 
 -------------------------------
 ---- ENVIRONMENT VARIABLES ----
@@ -67,9 +58,9 @@ hl.config({
 
         border_size = 2,
 
-        col = {
-            active_border   = { colors = { "rgba(FFB7C5ff)", "rgba(FF69B4ff)" }, angle = 90 },
-            inactive_border = { colors = {"rgba(00FFFFff)", "rgba(B9DAF8ff)"}, angle = 90 },
+	        col = {
+            active_border   = { colors = { "rgba(FFB7C5ff)", "rgba(FF69B4ff)" }, angle = 225 },
+            inactive_border = { colors = { "rgba(00FFFFff)", "rgba(ffffffff)" }, angle = 45 },
         },
 
         layout = "dwindle",
@@ -85,7 +76,7 @@ hl.config({
             enabled      = true,
             range        = 4,
             render_power = 3,
-            color        = 0x1a1a1aee,
+            color        = 0x000000ee,
         },
 
         blur = {
@@ -100,11 +91,11 @@ hl.config({
         },
 
         glow = {
-            enabled      = true,
-            range        = 18,
-            render_power = 3,
-            color        = { colors = { "rgba(FFB7C5ff)", "rgba(FF69B4ff)" }, angle = 90 },
-	    color_inactive = {colors = { "rgba(00FFFFff)", "rgba(B9DAF8ff)" }, angle = 90 },
+            enabled        = true,
+            range          = 18,
+            render_power   = 3,
+            color          = { colors = { "rgba(FFB7C5ff)", "rgba(FF69B4ff)" }, angle = 225 },
+            color_inactive = { colors = { "rgba(00FFFFff)", "rgba(ffffffff)" }, angle = 45 },
         },
     },
 
@@ -114,9 +105,9 @@ hl.config({
     },
 
     input = {
-        kb_layout    = "us",
-        follow_mouse = 1,
-        sensitivity  = 0,
+        kb_layout     = "us",
+        follow_mouse  = 1,
+        sensitivity   = 0,
         accel_profile = "flat",
 
         touchpad = {
@@ -190,6 +181,7 @@ hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + SHIFT + R", hl.dsp.exec_cmd("rofi -show run"))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
+
 -- Full Fullscreen (0)
 hl.bind(mainMod .. " + F11", hl.dsp.window.fullscreen({ mode = 0 }))
 
@@ -241,6 +233,18 @@ hl.bind("XF86AudioNext",  hl.dsp.exec_cmd("playerctl next"),       { locked = tr
 hl.bind("XF86AudioPause", hl.dsp.exec_cmd("playerctl pause"),      { locked = true })
 hl.bind("XF86AudioPlay",  hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
 hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"),   { locked = true })
+hl.bind("XF86AudioStop",  hl.dsp.exec_cmd("playerctl stop"),       { locked = true })
+
+-- Extra Fn / Special Keys
+hl.bind("XF86Calculator", hl.dsp.exec_cmd("kitty -e qalculator"))
+hl.bind("XF86Search",     hl.dsp.exec_cmd(menu))
+hl.bind("XF86HomePage",   hl.dsp.exec_cmd(browser))
+hl.bind("XF86Mail",       hl.dsp.exec_cmd("thunderbird"))
+hl.bind("XF86Display",    hl.dsp.workspace.toggle_special("magic"))
+hl.bind("XF86Tools",      hl.dsp.exec_cmd(terminal .. " -e btop"))
+hl.bind("code:210",       hl.dsp.exec_cmd(terminal .. " -e btop"))
+hl.bind("code:107",       hl.dsp.exec_cmd("hyprshot -m output"))
+hl.bind(mainMod .. " + code:107", hl.dsp.exec_cmd("hyprshot -m window"))hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"),   { locked = true })
 hl.bind("XF86AudioStop",  hl.dsp.exec_cmd("playerctl stop"),       { locked = true })
 
 -- Extra Fn / Special Keys
