@@ -1,4 +1,5 @@
 # --- System & Desktop Environment Noise ---
+unity3d/
 fontconfig/
 .avalonia-build-tasks/
 btop/
@@ -124,4 +125,4 @@ zoom.conf
 zoom/
 zoomus.conf
 /kdeconnect
-/nvim/lazy-lock.json
+nvim/lazy-lock.json

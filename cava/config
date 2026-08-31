@@ -5,7 +5,7 @@
 # Number of bars (20-200) - fewer bars = better performance
 bars = 28
 # Framerate (1-144) - higher = smoother but more CPU intensive
-framerate = 120
+framerate = 45
 
 [input]
 # Audio input method: pulse, alsa, fifo, or portaudio

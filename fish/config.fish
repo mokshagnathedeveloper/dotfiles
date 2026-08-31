@@ -24,7 +24,7 @@ alias wp-stop='killall linux-wallpaperengine'
 # Wallpaper Engine Function (wp-show)
 function wp-show
     set -l WP_ROOT "/home/Mokshagna/.local/share/Steam/steamapps/workshop/content/431960"
-    set -l ID "3035025901"
+    set -l ID "3738432326"
 
     # Use the first argument if provided, otherwise use the default ID
     if count $argv > /dev/null
