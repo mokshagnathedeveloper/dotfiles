@@ -1,32 +1,31 @@
-# Reversed High-Tech Gradient
+# Kitty Tab Bar Replica with Visible Slanted Dividers
 format = """
-[░▒▓](#284EC3)\
-[ $custom ](bg:#284EC3 fg:#DBC58F)\
-[](fg:#284EC3 bg:#7194DD)\
+[](#1A1A1A)\
+[ $custom ](bg:#1A1A1A fg:#FFB7C5 bold)\
+[](fg:#1A1A1A bg:#1A1A1A)\
 $directory\
-[](fg:#7194DD bg:#B9DAF8)\
+[](fg:#1A1A1A bg:#1A1A1A)\
 $git_branch\
 $git_status\
-[](fg:#B9DAF8)\
+[](fg:#1A1A1A)\
 $character\
 """
 
 [custom.arch_logo]
-command = "echo 󰣇 "
+command = "echo 󰣇"
 when = "true"
-style = "bg:#284EC3 fg:#DBC58F"
+style = "bg:#1A1A1A fg:#FFB7C5"
 format = "[$output]($style)"
 
 [directory]
-style = "bg:#7194DD fg:#DBC58F"
+style = "bg:#1A1A1A fg:#FFB7C5"
 format = "[ $path ]($style)"
 
 [git_branch]
 symbol = ""
-style = "bg:#B9DAF8 fg:#2E3440"
-format = "[[ $symbol $branch ]($style)]($style)"
+style = "bg:#1A1A1A fg:#FFB7C5"
+format = "[ $symbol $branch ]($style)"
 
 [character]
-success_symbol = "[ ➜ ](#DBC58F)"
+success_symbol = "[ ➜ ](#00FFFF)"
 error_symbol = "[ ➜ ](bold red)"
-
