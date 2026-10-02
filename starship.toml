@@ -1,29 +1,29 @@
 # Kitty Tab Bar Replica with Visible Slanted Dividers
 format = """
-[](#1A1A1A)\
-[ $custom ](bg:#1A1A1A fg:#FFB7C5 bold)\
-[](fg:#1A1A1A bg:#1A1A1A)\
+[](#000000)\
+[ $custom ](bg:#000000 fg:#FFB7C5 bold)\
+[](fg:#000000 bg:#000000)\
 $directory\
-[](fg:#1A1A1A bg:#1A1A1A)\
+[](fg:#000000 bg:#000000)\
 $git_branch\
 $git_status\
-[](fg:#1A1A1A)\
+[](fg:#000000)\
 $character\
 """
 
 [custom.arch_logo]
 command = "echo 󰣇"
 when = "true"
-style = "bg:#1A1A1A fg:#FFB7C5"
+style = "bg:#000000 fg:#FFB7C5"
 format = "[$output]($style)"
 
 [directory]
-style = "bg:#1A1A1A fg:#FFB7C5"
+style = "bg:#000000 fg:#FFB7C5"
 format = "[ $path ]($style)"
 
 [git_branch]
 symbol = ""
-style = "bg:#1A1A1A fg:#FFB7C5"
+style = "bg:#000000 fg:#FFB7C5"
 format = "[ $symbol $branch ]($style)"
 
 [character]

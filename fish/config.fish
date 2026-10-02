@@ -50,7 +50,7 @@ function wp-show
             --fps 30 \
             --screen-root eDP-1 \
             --scaling fill \
-            --no-shared-texture \
+            --shared-texture \
             --geometry 1920x1080 \
             --max-memory-usage 1024 >/dev/null 2>&1 &
     end
@@ -93,6 +93,8 @@ function ex
         switch $argv[1]
             case '*.tar.bz2'
                 tar -xjf $argv[1]
+            case '*.tar.xz'
+                tar -xvf $argv[1]
             case '*.tar.gz'
                 tar -xzf $argv[1]
             case '*.bz2'
